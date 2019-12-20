@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .back
+        {
+        }
+        .logo {
+            position: relative; top: 0px; left: 50%; transform: translate(-50%, 0%);
+            width: 96px; height: 32px;
+        }
+        .searchbar {
+            position: relative; top: 0px; left: 50%; transform: translate(-50%, 0%);
+            height: 32px; width: 80%; background-color: black;
+            border-radius: 12px; overflow: hidden; border: 0.5px solid #cccccc;
+            margin-top: 10px;
+        }
+        .searchbar .text {
+            width: calc(100% - 30px);  height: 100%;
+        }
+        .searchbar .sub {
+            position: absolute; right: 0; width: 30px; height: 100%;
+            background-color: #3b78e7;
+        }
+        .newslist {
+            position: relative; top: 0px; left: 2%; width: 96%;
+            margin-top: 20px;
+        }
+        .newslist .news {
+            position: relative; top: 0px; height: 200px;
+            padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;
+            border-style: inset; border-color:lightgray; border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        .news .author {
+            margin-top: 5px;
+            font-size: small;
+            color:gray;
+        }
+        .news .title {
+            margin-top: 5px;
+            text-indent: 10px;
+            font-weight: bold;
+            width: calc(100% - 170px);
+        }
+        .news .img {
+            
+        }
+        .news .img img {
+            position: absolute;
+            top: 30px; right: 20px;
+            border-radius: 20px;
+            object-fit: cover;
+            height: 150px; width: 150px;
+        }
+        .news .date {
+            position: absolute;
+            font-size: small;
+            color:gray;
+            bottom: 10px;
+        }
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <title>사전 과제</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <div class="back">
+        <img class="logo" src="logo.png"/>
+        <form method="post" action="https://www.google.com">
+            <div class="searchbar">
+                <input class="text"/>
+                <button class="sub">
+                    <svg focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                </button>
+            </div>
+        </form>
+        <div class="newslist">
+            <div class="news">
+                <div class="author">동아일보</div>
+                <div class="title">'삼성의 저주'? 삼성이 철수한 中핸드폰 혜주 공장 가보니...</div>
+                <div class="img">
+                    <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2019/12/11/98753226.2.jpg"/>
+                </div>
+                <div class="date">1일 전</div>
+            </div>
+            <div class="news">
+                <div class="author">동아일보</div>
+                <div class="title">'삼성의 저주'? 삼성이 철수한 中핸드폰 혜주 공장 가보니...</div>
+                <div class="img">
+                    <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2019/12/11/98753226.2.jpg"/>
+                </div>
+                <div class="date">1일 전</div>
+            </div>
+            <div class="news">
+                <div class="author">동아일보</div>
+                <div class="title">'삼성의 저주'? 삼성이 철수한 中핸드폰 혜주 공장 가보니...</div>
+                <div class="img">
+                    <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2019/12/11/98753226.2.jpg"/>
+                </div>
+                <div class="date">1일 전</div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
